@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>12주차 과제-감염병 페이지</title>
+</head>
+<style>
+html{
+  height:100%;
+}
+*{
+  padding:0px;
+  margin:0px;
+}
+li{
+  list-style-type:none;
+}
+.clear{
+  clear:both;
+}
+#page{
+  width:1280px;
+  margin:auto;
+  border:0px;
+}
+header{
+  width:1280px;
+  height:65px;
+  margin-top:18px;
+}
+nav{
+  width:1280px;
+  height:60px;
+  margin-top:12px;
+  border:solid 1px #bbbbbb;
+}
+nav li{
+  margin:20px 30px;
+}
+section{
+  float:right;
+  margin-top:16px;
+}
+aside{
+  float:left;
+  margin-top:16px;
+}
+aside li{
+  text-align:center;
+  margin-bottom:12px;
+}
+footer{
+  position:absolute;
+  bottom:0;
+}
+#Logo{
+    float:left;
+    margin-top:10px;
+}
+#TopMenu{
+  float:right;
+  margin: 40px 40px 0 0;
+}
+#QuickMenu{
+  text-align:center;
+  border:none;
+}
+#QuickMenu ul li{
+  float:left;
+  margin:20px;
+}
+#QuickMenu img:hover{
+  transform:scale(1.2);
+  filter:invert(1);
+}
+#UserMenu img:hover{
+  filter:invert(1);
+}
+#SNSMenu{
+  text-align:center;
+  border:none;
+}
+#SNSMenu ul li{
+  float:left;
+  margin:20px;
+}
+#SNSMenu img:hover{
+  filter:invert(1);
+  transform:scale(1.1);
+  transition:transform 0.5s;
+  overflow:hidden;
+}
+.MainMenu, .SubMenu{
+  font-weight:bold;
+}
+.MainMenu:hover .MainMenu{
+  font-weight:bolder;
+}
+.SubMenu{
+  display:none;
+  margin:0px;
+  background-color:white;
+  width:250px;
+  float:center;
+  vertical-align:middle;
+  text-align:center;
+  position:absolute;
+  height:0px;
+  overflow:hidden;
+}
+.MainMenuLi{
+  position:relative;
+  display:inline-block;
+}
+.MainMenuLi:hover .SubMenu{
+  height:500px;
+  display:block;
+}
+.MainInfo{
+
+}
+.SubInfo{
+
+}
+</style>
+<body id="page">
+  <header><!--로고, 상단 메뉴-->
+    <div id="Logo">
+      <img src="./img/kcdclogo.png">
+    </div>
+    <div id="TopMenu">
+      로그인 | 회원가입 | 마이페이지 | 고객센터
+    </div>
+    <div class="clear"></div>
+  </header>
+  <nav><!--중단부 메뉴-->
+    <ul class="MainMenu">
+      <li class="MainMenuLi"><a href="./infection.html"> 감염병 </a>
+      <ul class="SubMenu">
+        <li><a href="./infection.html">감염병정보</a></li>
+        <li>해외감염정보</li>
+        <li>감염병유행정보</li>
+        <li>결핵</li>
+        <li>예방접종</li>
+        <li>감염병간행물</li>
+      </ul>
+      </li>
+      <li class="MainMenuLi"> 건강정보
+      <ul class="SubMenu">
+        <li>손상정보</li>
+        <li>국가건강정보포털</li>
+        <li>희귀질환정보</li>
+      </ul>
+      </li>
+      <li class="MainMenuLi"> 정책정보
+      <ul class="SubMenu">
+        <li>감염병</li>
+        <li>생물안전</li>
+        <li>만성질환</li>
+        <li>기후변화</li>
+        <li>의료방사선안전관리</li>
+        <li>장기·조직·혈액관리</li>
+      </ul>
+      </li>
+      <li class="MainMenuLi"> 연구개발
+      <ul class="SubMenu">
+        <li>질병연구</li>
+        <li>연구성과</li>
+        <li>연구자원인프라</li>
+        <li>생명윤리</li>
+      </ul>
+      </li>
+      <li class="MainMenuLi"> 알림·자료
+      <ul class="SubMenu">
+        <li>이달의건강소식</li>
+        <li>보도자료</li>
+        <li>포토뉴스</li>
+        <li>홍보자료</li>
+        <li>공지사항</li>
+        <li>공고/공시</li>
+        <li>채용공고</li>
+        <li>법령·지침·서식</li>
+        <li>공무국외여행보고서</li>
+      </ul>
+      </li>
+      <li class="MainMenuLi"> 간행물·통계
+      <ul class="SubMenu">
+        <li>간행물</li>
+        <li>통계</li>
+        <li>연구성과</li>
+      </ul>
+      </li>
+      <li class="MainMenuLi"> 민원·정보공개
+      <ul class="SubMenu">
+        <li>1339콜센터</li>
+        <li>민원신청</li>
+        <li>나의민원확인</li>
+        <li>생명윤리법관련민원안내</li>
+        <li>사전정보공표</li>
+        <li>정보공개청구</li>
+        <li>공공데이터</li>
+        <li>기관장업무추진비</li>
+      </ul>
+      </li>
+      <li class="MainMenuLi"> 기관소개
+      <ul class="SubMenu">
+        <li>소개</li>
+        <li>비전과미션</li>
+        <li>핵심사업</li>
+        <li>연혁</li>
+        <li>조직·직원찾기</li>
+        <li>정부상징</li>
+        <li>오시는길</li>
+        <li>시설안내</li>
+        <li>누리집이용안내</li>
+      </ul>
+      </li>
+      <li class="MainMenuLi"> 사업별홈페이지
+      </li>
+    </ul>
+  </nav>
+  <section><!--메인 이미지-->
+    <img src="./img/infectionmain.png">
+  </section>
+  <aside><!--감염병 세부 메뉴-->
+    <ul class="MainMenu">
+      <li><a href="./infection.html">감염병정보</a></li>
+      <li>해외감염정보</li>
+      <li>감염병유행정보</li>
+      <li>결핵</li>
+      <li>예방접종</li>
+      <li>감염병간행물</li>
+    </ul>
+  </aside>
+  <section><!--내용-->
+    <ul>
+      <li><b>감염병포털 소개</b></li>
+      <ul>
+        <li>법정감염병(전수/표본)의 현황(통계) 및 올바른 정보를 국민들이 쉽게 접근할 수 있는 감염병 정보 포털사이트</li>
+      </ul>
+      <br>
+      <li><b>통계</b></li>
+      <ul>
+        <li>전수감시 감염병: 전수감시 감염병에 대한 주요통계, 질병별 통계, 지역별 통계, 성별/연령별 통계에 대한 통계</li>
+        <li>표본감시 감염병: 표본감시 감염병에 대한 통계</li>
+        <li>비브리오 감시: 해수에서 측정한 비브리오 통계</li>
+      </ul>
+      <br>
+      <li><b>지침</b></li>
+      <ul>
+        <li>법정감염병의 증상, 진단 및 치료, 신고기준, 예방과 같은 정보</li>
+        <li>감염병 관리, 각 기관에서 해야하는 수행체계, 감시체계, 실험실 검사, 역학조사, 환자관리/접촉자 관리, 방역관리에 대한 정보</li>
+      </ul>
+      <br>
+      <li><b>발간자료</b></li>
+      <ul>
+        <li>감시연보: 감염병 신고·보고된 법정감염병 현황을 분석 정리한 자료</li>
+        <li>역학조사연보: 시·군·구 역학조사반의 신고 접수된 수인성·식품매개 감염병 집단발생에 분석 정리한 자료</li>
+        <li>주간소식지: 표본감시 감염병 주간 정보</li>
+        <li>실험실 소식지 정보: 병원체 및 매개체 주간 감시 정보</li>
+      </ul>
+  </section>
+  <footer><!--하단 정보-->
+    <div>
+      <ul>
+        <li>(28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리본부 ☎전화번호1339</li>
+        <li>COPYRIGHT © 2019 질병관리본부 ALL RIGHTS RESERVED.</li>
+      </ul>
+    </div>
+    <div>
+      <img src="./img/footer1.png">
+      <img src="./img/footer2.png">
+      <img src="./img/footer3.png">
+      <img src="./img/footer4.png">
+      <img src="./img/footer5.png">
+      <img src="./img/footer6.png">
+    </div>
+  </footer>
+</body>
+</html>
